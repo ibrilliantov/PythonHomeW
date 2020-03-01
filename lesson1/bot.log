@@ -1,0 +1,1004 @@
+2020-02-19 17:43:03,654 - INFO - Бот запускается
+2020-02-19 17:45:47,371 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 17:45:57,422 - INFO - Бот запускается
+2020-02-19 17:46:07,598 - INFO - Вызван /start
+2020-02-19 18:22:22,737 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d670b8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:22:32,317 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d67550>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:22:37,325 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d675c0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:22:42,332 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d677b8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+2020-02-19 18:22:42,333 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 787, in connect
+    super(socksocket, self).connect(proxy_addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 209, in create_connection
+    raise err
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 199, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 47, in wrapper
+    return function(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 800, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy t1.learn.python.ru:1080: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ConnectTimeoutError: (<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d677b8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d677b8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d677b8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+2020-02-19 18:22:48,343 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d67048>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:22:53,350 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105d67c18>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:22:58,356 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf550>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:23:03,400 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf630>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+2020-02-19 18:23:03,400 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 787, in connect
+    super(socksocket, self).connect(proxy_addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 209, in create_connection
+    raise err
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 199, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 47, in wrapper
+    return function(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 800, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy t1.learn.python.ru:1080: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ConnectTimeoutError: (<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf630>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf630>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf630>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+2020-02-19 18:23:09,906 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cdcba8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:23:14,913 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf69b0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:23:19,920 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6b38>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:23:24,924 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf62e8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+2020-02-19 18:23:24,925 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 787, in connect
+    super(socksocket, self).connect(proxy_addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 209, in create_connection
+    raise err
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 199, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 47, in wrapper
+    return function(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 800, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy t1.learn.python.ru:1080: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ConnectTimeoutError: (<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf62e8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf62e8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf62e8>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)'))
+2020-02-19 18:34:18,162 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf7b8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:18,167 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf898>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:18,169 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:18,170 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddfa20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 18:34:18,171 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddfa20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddfa20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddfa20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 18:34:19,268 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf710>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:19,273 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddfc88>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:19,277 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddfeb8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:19,282 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddff98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 18:34:19,284 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddff98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddff98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddff98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 18:34:20,792 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b080>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:20,798 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b208>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:20,804 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b2b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 18:34:20,856 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 18:34:20,858 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:05:18,419 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6710>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:18,424 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:18,426 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6e10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:18,427 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:05:18,428 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:05:21,815 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cf6828>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:21,816 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105cdce48>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:21,818 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddff98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:21,820 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:05:21,820 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:05:26,895 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf978>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:26,896 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf828>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:26,897 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105ddf780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:05:26,899 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:05:26,899 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:20:24,459 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b128>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:20:24,462 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b5c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:20:24,464 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b668>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:20:24,465 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b748>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:20:24,465 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b748>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b748>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b748>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:35:25,791 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b518>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:35:25,793 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b978>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:35:25,793 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3ba20>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:35:25,794 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:35:25,794 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bb00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:40:58,927 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b438>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:40:58,930 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3be10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:40:58,932 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3beb8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 19:40:58,933 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bf98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 19:40:58,933 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bf98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bf98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3bf98>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 20:28:00,612 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b860>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 21:44:44,709 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b780>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 21:44:44,716 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b6d8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates
+2020-02-19 21:44:44,719 - ERROR - Error while getting Updates: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b4a8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 21:44:44,720 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 88, in _new_conn
+    **extra_kw
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/socks.py", line 180, in create_connection
+    for r in socket.getaddrinfo(proxy_addr, proxy_port, 0, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/contrib/socks.py", line 120, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b4a8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 225, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 695, in urlopen
+    **response_kw)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b4a8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 378, in _network_loop_retry
+    if not action_cb():
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/updater.py", line 339, in polling_action_cb
+    allowed_updates=allowed_updates)
+  File "</Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/decorator.py:decorator-gen-31>", line 2, in get_updates
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 67, in decorator
+    result = func(*args, **kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/bot.py", line 2067, in get_updates
+    result = self._request.post(url, data, timeout=float(read_latency) + float(timeout))
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 334, in post
+    **urlopen_kwargs)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/utils/request.py", line 231, in _request_wrapper
+    raise NetworkError('urllib3 HTTPError {0}'.format(error))
+telegram.error.NetworkError: urllib3 HTTPError SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot995685781:AAE_GmwDn6oEudhUB0UKBHz0HWpLQ8vw91s/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x105e3b4a8>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-19 22:05:54,295 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 22:10:35,755 - INFO - Бот запускается
+2020-02-19 22:12:51,558 - INFO - Бот запускается
+2020-02-19 22:13:41,261 - INFO - Бот запускается
+2020-02-19 22:14:07,077 - INFO - Бот запускается
+2020-02-19 22:15:04,398 - INFO - Бот запускается
+2020-02-19 22:15:52,342 - INFO - Бот запускается
+2020-02-19 22:15:53,170 - INFO - Вызван /start
+2020-02-19 22:16:01,841 - INFO - Вызван /start
+2020-02-19 22:21:06,202 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 22:21:07,864 - INFO - Бот запускается
+2020-02-19 22:34:49,444 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 22:34:56,161 - INFO - Бот запускается
+2020-02-19 22:48:57,035 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 22:49:03,088 - INFO - Бот запускается
+2020-02-19 22:49:06,252 - INFO - User: Denis, Chat id: 381743915, message: bnmbbm
+2020-02-19 22:52:00,185 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 22:59:41,474 - INFO - Бот запускается
+2020-02-19 22:59:49,081 - INFO - Вызван /start
+2020-02-19 22:59:51,548 - INFO - User: Denis, Chat id: 381743915, message: fsdfsdfsdfs
+2020-02-19 23:05:36,218 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-19 23:16:33,105 - INFO - Бот запускается
+2020-02-19 23:17:21,671 - INFO - User: Denis, Chat id: 381743915, message: dsfd
+2020-02-19 23:17:43,445 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-21 20:59:25,108 - INFO - Бот запускается
+2020-02-21 20:59:50,205 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/dispatcher.py", line 390, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/venv/lib/python3.7/site-packages/telegram/ext/handler.py", line 117, in handle_update
+    return self.callback(update, context)
+  File "/Users/denisbrilliantov/Desktop/Learn/learnPython/lesson1/lesson1/bot.py", line 54, in talk_to_me
+    user_text = "Привет {}! Ты написал: {}".format(update.message.chat.first_name, update.message.text)
+AttributeError: 'CallbackContext' object has no attribute 'message'
+2020-02-21 21:14:32,126 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-21 21:14:43,643 - INFO - Бот запускается
+2020-02-21 21:14:53,027 - INFO - User: Denis, Chat id: 381743915, message: fsdf
+2020-02-21 21:14:57,290 - INFO - Вызван /start
+2020-02-21 21:15:05,384 - INFO - Received signal 2 (SIGINT), stopping...
+2020-02-26 22:12:09,681 - INFO - Бот запускается
+2020-02-26 22:12:50,690 - INFO - User: Irina, Chat id: 371901229, message: Привет
+2020-02-26 22:13:00,621 - INFO - User: Irina, Chat id: 371901229, message: Мне скучно
+2020-02-26 22:13:10,830 - INFO - User: Irina, Chat id: 371901229, message: Да ну тебя
+2020-02-26 22:13:23,793 - INFO - Received signal 2 (SIGINT), stopping...
