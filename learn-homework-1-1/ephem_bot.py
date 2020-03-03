@@ -14,7 +14,7 @@
 """
 import logging
 import ephem
-from lesson1 import settings
+from PythonHomeW.lesson1 import settings
 import datetime
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
