@@ -7,6 +7,7 @@ def cut_cake(people):
 
 
 import random
+
 while True:
     people = random.randint(1, 10)
     cut_cake(people)
